@@ -16,21 +16,6 @@ exports.createUser = async (req, res) => {
 exports.authenticateUser = async (req, res) => {
   const { username, password } = req.body;
   try {
-    const user = await User.findOne({ username, password });
-    if (user) {
-      res.status(200).json({ message: 'Authentication successful', user });
-    } else {
-      res.status(401).json({ message: 'Invalid username or password' });
-    }
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
-  const User = require('../models/User');
-
-// Authenticate user
-exports.authenticateUser = async (req, res) => {
-  const { username, password } = req.body;
-  try {
     console.log('Intentando autenticar usuario:', username);
     const user = await User.findOne({ username, password }).exec();
     if (user) {
@@ -40,7 +25,6 @@ exports.authenticateUser = async (req, res) => {
     }
   } catch (err) {
     console.error('Error durante la autenticación:', err.message);
-    res.status(500).json({ message: err.message });
-  }
-};
+    res.status(500).json({ message: err.message });
+  }
 };
