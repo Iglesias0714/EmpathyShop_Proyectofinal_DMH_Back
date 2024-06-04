@@ -12,9 +12,13 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 const dbURI = 'mongodb+srv://20460269:polla12345@proyecto-pancho.7wlre2i.mongodb.net/';
-mongoose.connect(dbURI)
+mongoose.connect(dbURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // Aumenta el tiempo de espera a 30 segundos
+})
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+  .catch(err => console.log('MongoDB connection error:', err));
 
 // Routes
 const productRoutes = require('./routes/productRoutes');
