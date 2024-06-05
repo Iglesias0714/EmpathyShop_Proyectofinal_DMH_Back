@@ -54,15 +54,17 @@ npm install
 
 ## Componentes del Proyecto
 
-| Componente            | Descripción                                                   | Enlace                                      |
-|-----------------------|---------------------------------------------------------------|---------------------------------------------|
-| `app.js`              | Archivo principal del servidor Express que configura middleware y rutas. | [app.js](./app.js)                          |
-| `config.js`           | Archivo de configuración para la conexión con MongoDB Atlas. | [config.js](./config.js)                    |
-| `models/Product.js`   | Modelo de Mongoose que define la estructura de un producto en la base de datos. | [Product.js](./models/Product.js)           |
-| `routes/products.js`  | Define las rutas de la API para las operaciones CRUD de productos. | [products.js](./routes/products.js)         |
-| `controllers/productController.js` | Controlador que maneja la lógica de las operaciones CRUD de productos. | [productController.js](./controllers/productController.js) |
-| `package.json`        | Archivo que contiene las dependencias y scripts del proyecto. | [package.json](./package.json)              |
-| `.env.example`        | Ejemplo de archivo de variables de entorno necesarias para la configuración del proyecto. | [.env.example](./.env.example)              |
+| Componente              | Descripción                                                   | Enlace                                      |
+|-------------------------|---------------------------------------------------------------|---------------------------------------------|
+| `index.js`              | Archivo principal del servidor Express que configura middleware y rutas. | [index.js](./index.js)                      |
+| `productController.js` | Controlador que maneja la lógica de las operaciones CRUD de productos. | [productController.js](./controllers/productController.js) |
+| `userController.js`    | Controlador que maneja la lógica de las operaciones CRUD de usuarios. | [userController.js](./controllers/userController.js)       |
+| `Product.js`     | Modelo de Mongoose que define la estructura de un producto en la base de datos. | [Product.js](./models/Product.js)           |
+| `User.js`        | Modelo de Mongoose que define la estructura de un usuario en la base de datos. | [User.js](./models/User.js)                 |
+| `productRoutes.js` | Define las rutas de la API para las operaciones CRUD de productos. | [productRoutes.js](./routes/productRoutes.js) |
+| `userRoutes.js`  | Define las rutas de la API para las operaciones CRUD de usuarios. | [userRoutes.js](./routes/userRoutes.js)     |
+| `package.json`          | Archivo que contiene las dependencias y scripts del proyecto. | [package.json](./package.json)              |
+| `package-lock.json`     | Archivo que contiene las versiones exactas de cada dependencia. | [package-lock.json](./package-lock.json)    |
 
 
 
