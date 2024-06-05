@@ -5,16 +5,22 @@ Backend de la aplicación EmpathyShop desarrollado con Node.js, Express y MongoD
 ## Tabla de Contenido
 
 - [Descripción del Proyecto](#descripción-del-proyecto)
+- [Frontend de la aplicación](#Frontend-de-la-aplicación)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [Clona el repositorio](#clona-el-repositorio)
   - [Navega al directorio del proyecto](#navega-al-directorio-del-proyecto)
   - [Instala las dependencias](#instala-las-dependencias)
 - [Rutas de la API](#rutas-de-la-api)
+- [Componentes del proyecto](#Componentes-del-proyecto)
 - [Enlaces externos](#enlaces-externos)
 
 ## Descripción del Proyecto
 
 EmpathyShop es una aplicación móvil que permite a los usuarios ver una lista de productos con sus nombres, precios y descripciones, así como añadir y eliminar productos.
+
+##Frontend de la aplicación:
+ [EmpathyShop_Movil](https://github.com/Iglesias0714/EmpathyShop_Movil)
+
 
 ## Tecnologías Utilizadas
 
@@ -45,6 +51,20 @@ npm install
 | GET    | /products/:id | Obtiene un producto por su ID.     |
 | PUT    | /products/:id | Actualiza un producto por su ID.   |
 | DELETE | /products/:id | Elimina un producto por su ID.     |
+
+## Componentes del Proyecto
+
+| Componente            | Descripción                                                   | Enlace                                      |
+|-----------------------|---------------------------------------------------------------|---------------------------------------------|
+| `app.js`              | Archivo principal del servidor Express que configura middleware y rutas. | [app.js](./app.js)                          |
+| `config.js`           | Archivo de configuración para la conexión con MongoDB Atlas. | [config.js](./config.js)                    |
+| `models/Product.js`   | Modelo de Mongoose que define la estructura de un producto en la base de datos. | [Product.js](./models/Product.js)           |
+| `routes/products.js`  | Define las rutas de la API para las operaciones CRUD de productos. | [products.js](./routes/products.js)         |
+| `controllers/productController.js` | Controlador que maneja la lógica de las operaciones CRUD de productos. | [productController.js](./controllers/productController.js) |
+| `package.json`        | Archivo que contiene las dependencias y scripts del proyecto. | [package.json](./package.json)              |
+| `.env.example`        | Ejemplo de archivo de variables de entorno necesarias para la configuración del proyecto. | [.env.example](./.env.example)              |
+
+
 
 
 ## Enlaces externos
