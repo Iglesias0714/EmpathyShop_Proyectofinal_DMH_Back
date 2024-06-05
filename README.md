@@ -18,8 +18,7 @@ Backend de la aplicación EmpathyShop desarrollado con Node.js, Express y MongoD
 
 EmpathyShop es una aplicación móvil que permite a los usuarios ver una lista de productos con sus nombres, precios y descripciones, así como añadir y eliminar productos.
 
-##Frontend de la aplicación:
-
+## Frontend de la aplicación:
 
  [EmpathyShop_Movil](https://github.com/Iglesias0714/EmpathyShop_Movil)
 
